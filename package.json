@@ -1,0 +1,29 @@
+{
+  "name": "the-crunchy-kale",
+  "version": "1.0.0",
+  "description": "The Crunchy Kale Restaurant",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maysunktong/the-crunchy-kale.git"
+  },
+  "keywords": [
+    "multi-page",
+    "website"
+  ],
+  "author": "maysunktong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maysunktong/the-crunchy-kale/issues"
+  },
+  "homepage": "https://github.com/maysunktong/the-crunchy-kale#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
