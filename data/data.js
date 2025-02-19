@@ -245,7 +245,8 @@ const soups = [
     },
     { kCal: 128, fat: 4, protein: 5, carbs: 18 },
     79
-  ), new Menu(
+  ),
+  new Menu(
     "Minestrone",
     "soup",
     "diced italian vegetables in rich tomato broth with orzo pasta and fresh basil",
@@ -261,7 +262,8 @@ const soups = [
     },
     { kCal: 197, fat: 5, protein: 5, carbs: 33 },
     79
-  ), new Menu(
+  ),
+  new Menu(
     "Tomato and Basil",
     "soup",
     "classic mediterranean tomato soup with italian basil",
@@ -277,7 +279,8 @@ const soups = [
     },
     { kCal: 89, fat: 2, protein: 3, carbs: 18 },
     79
-  ), new Menu(
+  ),
+  new Menu(
     "Broccoli and Spinach",
     "soup",
     "blended broccoli and baby spinach topped with whole wheat croutons",
@@ -293,7 +296,8 @@ const soups = [
     },
     { kCal: 118, fat: 2, protein: 8, carbs: 16 },
     79
-  ), new Menu(
+  ),
+  new Menu(
     "Multi Grain Toast",
     "soup",
     "sourdough toast served with butter",
@@ -309,5 +313,351 @@ const soups = [
     },
     { kCal: 180, fat: 4, protein: 8, carbs: 24 },
     29
-  )
-]
+  ),
+];
+
+const desserts = [
+  new Menu(
+    "Mango Sunrise Smoothie Bowl",
+    ["desserts", "smoothie bowl"],
+    "creamy mango, passion fruit & coconut milk smoothie base, topped with honey nut granola, fresh mango, toasted almonds and chia seeds",
+    {
+      vegan: false,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": false,
+    },
+    { kCal: 336, fat: 8, protein: 8, carbs: 62 },
+    119
+  ),
+  new Menu(
+    "Chocolate Dream Smoothie Bowl",
+    ["desserts", "smoothie bowl"],
+    "chocolate and cashew nut butter base with whey protein and milk topped with dark chocolate chips, roasted coconut, chia seeds and toasted almonds",
+    {
+      vegan: false,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": true,
+      spicy: false,
+      "dairy-free": false,
+    },
+    { kCal: 461, fat: 13, protein: 21, carbs: 65 },
+    119
+  ),
+  new Menu(
+    "Overnight Oats",
+    ["desserts", "jar"],
+    "rolled oats, milk, wild honey, chia seeds, dried cranberries and toasted almonds",
+    {
+      vegan: false,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": true,
+      spicy: false,
+      "dairy-free": false,
+    },
+    { kCal: 489, fat: 13, protein: 28, carbs: 63 },
+    79
+  ),
+  new Menu(
+    "Strawberry and Coconut Chia Pudding",
+    ["desserts", "jar"],
+    "slow-cooked chia seed, coconut milk sugar-free strawberry jam",
+    {
+      vegan: true,
+      vegetarian: false,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    { kCal: 195, fat: 11, protein: 4, carbs: 20 },
+    79
+  ),
+  new Menu(
+    "Mango and Coconut Chia Pudding",
+    ["desserts", "jar"],
+    "slow-cooked chia seeds, coconut milk and sugar-free mango jam",
+    {
+      vegan: true,
+      vegetarian: false,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
+    79
+  ),
+  new Menu(
+    "Carrot Cake",
+    ["desserts", "cake"],
+    "dairy-free carrot cake with raisins, walnut, cinnamon and velvety cashew cream cheese frosting",
+    {
+      vegan: true,
+      vegetarian: false,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    { kCal: 439, fat: 23, protein: 9, carbs: 49 },
+    59
+  ),
+  new Menu(
+    "Dark Chocolate Mousse Pie",
+    ["desserts", "cake"],
+    "rich and moist chocolate mousse infused with premium cacao and coconut cream",
+    {
+      vegan: true,
+      vegetarian: false,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    { kCal: 380, fat: 24, protein: 6, carbs: 35 },
+    69
+  ),
+];
+
+const beverages = [
+  new Menu(
+    "Lemonrange",
+    ["beverage", "juice", "cold"],
+    "lemon, pineapple, orange",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    59
+  ),
+  new Menu(
+    "Carranger",
+    ["beverage", "juice", "cold"],
+    "carrot, orange and ginger",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    59
+  ),
+  new Menu(
+    "Barrot",
+    ["beverage", "juice", "cold"],
+    "beetroot, green apple, carrot and orange",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    59
+  ),
+  new Menu(
+    "Tangerine",
+    ["beverage", "juice", "cold"],
+    "pure tangerine orange juice",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    59
+  ),
+  new Menu(
+    "Espresso",
+    ["beverage", "coffee", "hot"],
+    "Excellent espresso shot",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Americano",
+    ["beverage", "coffee", "hot"],
+    "A cup of Americano to begin your day",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Cappuccino",
+    ["beverage", "coffee", "hot"],
+    "A cup of Cappuccino",
+    {
+      vegan: false,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": false,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Iced Americano",
+    ["beverage", "coffee", "ice"],
+    "A cup of Iced Americano",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Iced Coconut Long Black",
+    ["beverage", "coffee", "ice"],
+    "A cup of Iced Coconut Long Black Coffee",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Iced Lemon Tea",
+    ["beverage", "tea", "ice"],
+    "A cup of Iced Lemon Tea",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Latte",
+    ["beverage", "coffee", "hot"],
+    "A cup of Latte",
+    {
+      vegan: false,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": false,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Strawberry Matcha Latte",
+    ["beverage", "tea", "ice"],
+    "A cup of Strawberry Matcha Latte",
+    {
+      vegan: false,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": false,
+    },
+    {},
+    49
+  ),
+  new Menu(
+    "Thai Breakfast Tea",
+    ["beverage", "tea", "hot"],
+    "A cup of Thai Tea for your breakfast",
+    {
+      vegan: true,
+      vegetarian: true,
+      keto: false,
+      collagen: false,
+      "plant-based": false,
+      "high-protein": false,
+      spicy: false,
+      "dairy-free": true,
+    },
+    {},
+    49
+  ),
+];
