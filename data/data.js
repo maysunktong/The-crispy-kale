@@ -9,7 +9,7 @@ function slugify(text) {
 }
 
 class Menu {
-  constructor(name, group, description, dietary, nutrition, price, image) {
+  constructor(name, group, description, dietary, nutrition, price) {
     this.name = name;
     this.group = group;
     this.description = description;
