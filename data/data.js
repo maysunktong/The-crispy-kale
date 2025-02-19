@@ -1,3 +1,13 @@
+function slugify(text) {
+  return text
+      .toString()
+      .trim()                  
+      .toLowerCase()           
+      .replace(/\s+/g, "-")    
+      .replace(/[^\w-]+/g, "") 
+      .replace(/--+/g, "-");
+}
+
 class Menu {
   constructor(name, group, description, dietary, nutrition, price, image) {
     this.name = name;
@@ -6,7 +16,8 @@ class Menu {
     this.dietary = dietary;
     this.nutrition = nutrition;
     this.price = price;
-    this.image = image;
+    this.image = slugify(name);
+    this.slug = slugify(name);
   }
 }
 
@@ -27,6 +38,5 @@ const salads = [
     },
     { kCal: 315, fat: 23, protein: 20, carbs: 7 },
     125,
-    ""
   ),
 ];
