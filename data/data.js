@@ -4,7 +4,7 @@ function slugify(text) {
     .trim()
     .toLowerCase()
     .replace(/\s+/g, "-")
-    .replace(/[^\w-]+/g, "")
+    .replace(/[^\w-]+/g, "");
 }
 
 class Menu {
@@ -660,3 +660,7 @@ const beverages = [
     49
   ),
 ];
+
+const allMenu = [...salads, ...soups, ...desserts, ...beverages];
+
+export { allMenu, beverages, desserts, salads, soups };
