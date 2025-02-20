@@ -8,13 +8,22 @@ function slugify(text) {
 }
 
 class Menu {
-  constructor(name, group, description, dietary, nutrition, price) {
+  constructor(
+    name,
+    category,
+    description,
+    dietary,
+    nutrition,
+    price,
+    bestseller
+  ) {
     this.name = name;
-    this.group = group;
+    this.category = category;
     this.description = description;
     this.dietary = dietary;
     this.nutrition = nutrition;
     this.price = price;
+    this.bestseller = bestseller;
     this.image = slugify(name);
     this.slug = slugify(name);
   }
@@ -34,7 +43,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 315, fat: 23, protein: 20, carbs: 7 },
-    129
+    129,
+    false
   ),
   new Menu(
     "Classic Caesar",
@@ -49,7 +59,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 155, fat: 7, protein: 12, carbs: 11 },
-    129
+    129,
+    true
   ),
   new Menu(
     "Roast Beef Cobb",
@@ -64,7 +75,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 320, fat: 24, protein: 18, carbs: 8 },
-    159
+    159,
+    false
   ),
   new Menu(
     "Roast Beef Club",
@@ -79,7 +91,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 257, fat: 17, protein: 21, carbs: 5 },
-    159
+    159,
+    false
   ),
   new Menu(
     "Smoked Salmon Caesar",
@@ -94,7 +107,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 160, fat: 8, protein: 10, carbs: 12 },
-    149
+    149,
+    true
   ),
   new Menu(
     "Grilled Chicken Caesar",
@@ -109,7 +123,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 172, fat: 8, protein: 13, carbs: 12 },
-    139
+    139,
+    true
   ),
   new Menu(
     "Grilled Salmon Caesar",
@@ -124,7 +139,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 165, fat: 8, protein: 9, carbs: 12 },
-    149
+    149,
+    false
   ),
   new Menu(
     "New Orleans",
@@ -139,7 +155,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 283, fat: 18, protein: 19, carbs: 10 },
-    139
+    139,
+    false
   ),
   new Menu(
     "Mexican Chopped Chicken",
@@ -154,7 +171,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 366, fat: 30, protein: 12, carbs: 12 },
-    139
+    139,
+    false
   ),
   new Menu(
     "The Vegan Amigo",
@@ -169,7 +187,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 292, fat: 24, protein: 8, carbs: 11 },
-    139
+    139,
+    false
   ),
   new Menu(
     "The Greek",
@@ -184,7 +203,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 149, fat: 9, protein: 3, carbs: 14 },
-    139
+    139,
+    false
   ),
   new Menu(
     "Roasted Japanese Pumpkin",
@@ -199,7 +219,8 @@ const salads = [
       "dairy-free": false,
     },
     { kCal: 344, fat: 12, protein: 12, carbs: 47 },
-    139
+    139,
+    true
   ),
 ];
 
@@ -217,7 +238,8 @@ const soups = [
       "dairy-free": false,
     },
     { kCal: 128, fat: 4, protein: 5, carbs: 18 },
-    79
+    79,
+    true
   ),
   new Menu(
     "Minestrone",
@@ -232,7 +254,8 @@ const soups = [
       "dairy-free": false,
     },
     { kCal: 197, fat: 5, protein: 5, carbs: 33 },
-    79
+    79,
+    false
   ),
   new Menu(
     "Tomato and Basil",
@@ -247,7 +270,8 @@ const soups = [
       "dairy-free": false,
     },
     { kCal: 89, fat: 2, protein: 3, carbs: 18 },
-    79
+    79,
+    true
   ),
   new Menu(
     "Broccoli and Spinach",
@@ -262,7 +286,8 @@ const soups = [
       "dairy-free": false,
     },
     { kCal: 118, fat: 2, protein: 8, carbs: 16 },
-    79
+    79,
+    false
   ),
   new Menu(
     "Multi Grain Toast",
@@ -277,7 +302,8 @@ const soups = [
       "dairy-free": false,
     },
     { kCal: 180, fat: 4, protein: 8, carbs: 24 },
-    29
+    29,
+    false
   ),
 ];
 
@@ -295,7 +321,8 @@ const desserts = [
       "dairy-free": false,
     },
     { kCal: 336, fat: 8, protein: 8, carbs: 62 },
-    119
+    119,
+    true
   ),
   new Menu(
     "Chocolate Dream Smoothie Bowl",
@@ -310,7 +337,8 @@ const desserts = [
       "dairy-free": false,
     },
     { kCal: 461, fat: 13, protein: 21, carbs: 65 },
-    119
+    119,
+    true
   ),
   new Menu(
     "Overnight Oats",
@@ -325,7 +353,8 @@ const desserts = [
       "dairy-free": false,
     },
     { kCal: 489, fat: 13, protein: 28, carbs: 63 },
-    79
+    79,
+    true
   ),
   new Menu(
     "Strawberry and Coconut Chia Pudding",
@@ -340,7 +369,8 @@ const desserts = [
       "dairy-free": true,
     },
     { kCal: 195, fat: 11, protein: 4, carbs: 20 },
-    79
+    79,
+    true
   ),
   new Menu(
     "Mango and Coconut Chia Pudding",
@@ -355,7 +385,8 @@ const desserts = [
       "dairy-free": true,
     },
     { kCal: 178, fat: 10, protein: 4, carbs: 19 },
-    79
+    79,
+    true
   ),
   new Menu(
     "Carrot Cake",
@@ -370,7 +401,8 @@ const desserts = [
       "dairy-free": true,
     },
     { kCal: 439, fat: 23, protein: 9, carbs: 49 },
-    59
+    59,
+    false
   ),
   new Menu(
     "Dark Chocolate Mousse Pie",
@@ -385,7 +417,8 @@ const desserts = [
       "dairy-free": true,
     },
     { kCal: 380, fat: 24, protein: 6, carbs: 35 },
-    69
+    69,
+    false
   ),
 ];
 
@@ -403,7 +436,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    59
+    59,
+    true
   ),
   new Menu(
     "Carranger",
@@ -418,7 +452,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    59
+    59,
+    true
   ),
   new Menu(
     "Barrot",
@@ -433,7 +468,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    59
+    59,
+    true
   ),
   new Menu(
     "Tangerine",
@@ -448,7 +484,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    59
+    59,
+    true
   ),
   new Menu(
     "Espresso",
@@ -463,7 +500,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    49
+    49,
+    false
   ),
   new Menu(
     "Americano",
@@ -478,7 +516,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    49
+    49,
+    false
   ),
   new Menu(
     "Cappuccino",
@@ -493,7 +532,8 @@ const beverages = [
       "dairy-free": false,
     },
     {},
-    49
+    49,
+    false
   ),
   new Menu(
     "Iced Americano",
@@ -508,7 +548,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    49
+    49,
+    false
   ),
   new Menu(
     "Iced Coconut Long Black",
@@ -523,7 +564,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    49
+    49,
+    true
   ),
   new Menu(
     "Iced Lemon Tea",
@@ -538,7 +580,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    49
+    49,
+    false
   ),
   new Menu(
     "Latte",
@@ -553,22 +596,8 @@ const beverages = [
       "dairy-free": false,
     },
     {},
-    49
-  ),
-  new Menu(
-    "Strawberry Matcha Latte",
-    ["beverage", "tea", "ice"],
-    "A cup of Strawberry Matcha Latte",
-    {
-      vegan: false,
-      vegetarian: true,
-      keto: false,
-      "high-protein": false,
-      spicy: false,
-      "dairy-free": false,
-    },
-    {},
-    49
+    49,
+    false
   ),
   new Menu(
     "Thai Breakfast Tea",
@@ -583,7 +612,8 @@ const beverages = [
       "dairy-free": true,
     },
     {},
-    49
+    49,
+    false
   ),
 ];
 
