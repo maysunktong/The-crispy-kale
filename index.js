@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     title: "Zoo",
     headerTitle: "",
     pageType: "home",
-    dataArray: allMenu,
+    dataArray: "",
     introductoryText: "Introductory text",
   });
 });
