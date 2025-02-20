@@ -22,16 +22,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/:category/:item", (req, res) => {
-  res.render("pages/index", {
-    title: "Zoo",
-    headerTitle: "",
-    pageType: "home",
-    dataArray: allMenu,
-    introductoryText: "Introductory text",
-  });
-});
-
 app.listen(PORT, () =>
   console.log(`🥗 listening on port ${PORT} ✅ http://localhost:${PORT}`)
 );
