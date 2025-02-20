@@ -5,7 +5,6 @@ function slugify(text) {
     .toLowerCase()
     .replace(/\s+/g, "-")
     .replace(/[^\w-]+/g, "")
-    .replace(/--+/g, "-");
 }
 
 class Menu {
