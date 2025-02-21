@@ -1,7 +1,8 @@
+import * as dotenv from "dotenv";
 import express from "express";
 import morgan from "morgan";
 import * as path from "path";
-import * as dotenv from "dotenv";
+import shopRouter from './routes/shopRouter.js';
 
 dotenv.config();
 
@@ -20,11 +21,13 @@ app.get("/", (req, res) => {
     title: "Zoo",
     headerTitle: "",
     pageType: "home",
+    favicon: "",
     dataArray: "",
-    introductoryText: "Introductory text",
+    featuredText: "Introductory text",
   });
 });
 
+app.use("/shop", shopRouter);
 app.listen(PORT, () =>
   console.log(`🥗 listening on port ${PORT} ✅ http://localhost:${PORT}`)
 );
