@@ -1,7 +1,7 @@
 export const renderCart = (req, res) => {
   res.render("pages/cart", {
     title: "Home",
-    headerTitle: "Home",
+    headerTitle: "Cart",
     pageType: "home",
     favicon: "",
     dataArray: "",

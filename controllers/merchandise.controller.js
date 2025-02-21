@@ -1,7 +1,7 @@
 export const renderMerchandise = (req, res) => {
   res.render("pages/merchandise", {
     title: "Home",
-    headerTitle: "Home",
+    headerTitle: "Merchandise",
     pageType: "home",
     favicon: "",
     dataArray: "",
