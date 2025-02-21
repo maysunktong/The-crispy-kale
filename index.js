@@ -1,8 +1,13 @@
-import * as dotenv from "dotenv";
 import express from "express";
 import morgan from "morgan";
+import * as dotenv from "dotenv";
 import * as path from "path";
-import shopRouter from './routes/shopRouter.js';
+
+import homeRouter from "./routes/home.routes.js";
+import cartRouter from "./routes/cart.routes.js";
+import locationRouter from "./routes/location.routes.js";
+import merchandiseRouter from "./routes/merchandise.routes.js";
+import shopRouter from "./routes/shop.routes.js";
 
 dotenv.config();
 
@@ -16,18 +21,12 @@ app.use(morgan("dev"));
 
 const PORT = process.env.PORT;
 
-app.get("/", (req, res) => {
-  res.render("pages/index", {
-    title: "Zoo",
-    headerTitle: "",
-    pageType: "home",
-    favicon: "",
-    dataArray: "",
-    featuredText: "Introductory text",
-  });
-});
-
+app.get("/", homeRouter);
 app.use("/shop", shopRouter);
+app.use("/merchandise", merchandiseRouter);
+app.use("/locations", locationRouter);
+app.use("/cart", cartRouter);
+
 app.listen(PORT, () =>
   console.log(`🥗 listening on port ${PORT} ✅ http://localhost:${PORT}`)
 );
