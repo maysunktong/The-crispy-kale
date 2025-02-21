@@ -7,4 +7,4 @@ export const renderMerchandise = (req, res) => {
     dataArray: "",
     featuredText: "Features text",
   });
-}
+};

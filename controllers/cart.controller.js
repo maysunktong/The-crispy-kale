@@ -7,4 +7,4 @@ export const renderCart = (req, res) => {
     dataArray: "",
     featuredText: "Features text",
   });
-}
+};

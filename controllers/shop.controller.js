@@ -7,4 +7,4 @@ export const renderShop = (req, res) => {
     dataArray: "",
     featuredText: "Features text",
   });
-}
+};

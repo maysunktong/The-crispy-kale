@@ -7,4 +7,4 @@ export const renderHome = (req, res) => {
     dataArray: "",
     featuredText: "Features text",
   });
-}
+};

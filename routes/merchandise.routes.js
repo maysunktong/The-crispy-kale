@@ -1,5 +1,5 @@
 import express from "express";
-import { renderMerchandise } from '../controllers/merchandise.controller.js';
+import { renderMerchandise } from "../controllers/merchandise.controller.js";
 
 const merchandiseRouter = express.Router();
 
