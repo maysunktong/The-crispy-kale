@@ -19,21 +19,23 @@ export const renderCategory = (req, res) => {
     title: "shop",
     headerTitle: getCategoryParams,
     pageType: "category",
-    dataArray: "",
+    dataArray: getCategoryParams,
     image: "",
     featuredText: "Features text",
+    slug: ""
   });
 };
 
-export const renderSlug = (req, res) => {
-  const getSlugParams = req.params.slug;
+export const renderProduct = (req, res) => {
+  const getProductParams = req.params.slug;
 
   res.render("pages/shop", {
     title: "shop",
-    headerTitle: getSlugParams,
+    headerTitle: getProductParams,
     pageType: "product",
-    dataArray: "",
+    dataArray: getProductParams,
     image: "",
     featuredText: "Features text",
+    slug: ""
   });
 };
