@@ -14,12 +14,13 @@ export const renderShop = (req, res) => {
 
 export const renderCategory = (req, res) => {
   const getCategoryParams = req.params.category;
+  const getCategoryData = allMenu.filter(category => category.category.includes(`${getCategoryParams}`))
 
   res.render("pages/shop", {
     title: "shop",
     headerTitle: getCategoryParams,
     pageType: "category",
-    dataArray: getCategoryParams,
+    dataArray: getCategoryData,
     image: "",
     featuredText: "Features text",
     slug: ""

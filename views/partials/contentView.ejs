@@ -1,5 +1,11 @@
 <% if (locals.pageType === "category") { %>
 <div>
-  <h2><%= headerTitle %></h2>
+  <% dataArray.forEach(item => { %>
+    <div>
+      <a href="/shop/<%= item.slug %>">
+        <%= item.name %>
+      </a>
+    </div>
+  <% }) %>
 </div>
 <% } %>
