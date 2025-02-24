@@ -9,8 +9,6 @@ import locationRouter from "./routes/location.routes.js";
 import merchandiseRouter from "./routes/merchandise.routes.js";
 import shopRouter from "./routes/shop.routes.js";
 
-import { allMenu } from "./data/foodData.js";
-
 dotenv.config();
 
 const app = express();
@@ -30,7 +28,7 @@ app.use("/locations", locationRouter);
 app.use("/cart", cartRouter);
 
 app.listen(PORT, () =>
-  console.log(`🥗 listening on port ${PORT} ✅ http://localhost:${PORT} 📄 test data: ${allMenu.category}`)
+  console.log(`🥗 listening on port ${PORT} ✅ http://localhost:${PORT}`)
 );
 
 // TODO:
