@@ -14,29 +14,29 @@ export const renderShop = (req, res) => {
 
 export const renderCategory = (req, res) => {
   const getCategoryParams = req.params.category;
-  const getCategoryData = allMenu.filter(category => category.category.includes(`${getCategoryParams}`))
+  const getCategory = allMenu.filter(item => item.category.includes(`${getCategoryParams}`))
+
 
   res.render("pages/shop", {
     title: "shop",
     headerTitle: getCategoryParams,
     pageType: "category",
-    dataArray: getCategoryData,
+    dataArray: getCategory,
     image: "",
     featuredText: "Features text",
-    slug: ""
   });
 };
 
 export const renderProduct = (req, res) => {
   const getProductParams = req.params.slug;
+  const getProduct = allMenu.find(item => item.slug === getProductParams);
 
   res.render("pages/shop", {
     title: "shop",
     headerTitle: getProductParams,
     pageType: "product",
-    dataArray: getProductParams,
+    dataArray: getProduct,
     image: "",
     featuredText: "Features text",
-    slug: ""
   });
 };

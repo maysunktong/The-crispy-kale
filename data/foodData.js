@@ -310,7 +310,7 @@ const soups = [
 const desserts = [
   new Menu(
     "Mango Sunrise Smoothie Bowl",
-    ["desserts", "smoothie bowl"],
+    "desserts",
     "creamy mango, passion fruit & coconut milk smoothie base, topped with honey nut granola, fresh mango, toasted almonds and chia seeds",
     {
       vegan: false,
@@ -326,7 +326,7 @@ const desserts = [
   ),
   new Menu(
     "Chocolate Dream Smoothie Bowl",
-    ["desserts", "smoothie bowl"],
+    "desserts",
     "chocolate and cashew nut butter base with whey protein and milk topped with dark chocolate chips, roasted coconut, chia seeds and toasted almonds",
     {
       vegan: false,
@@ -342,7 +342,7 @@ const desserts = [
   ),
   new Menu(
     "Overnight Oats",
-    ["desserts", "jar"],
+    "desserts",
     "rolled oats, milk, wild honey, chia seeds, dried cranberries and toasted almonds",
     {
       vegan: false,
@@ -358,7 +358,7 @@ const desserts = [
   ),
   new Menu(
     "Strawberry and Coconut Chia Pudding",
-    ["desserts", "jar"],
+    "desserts",
     "slow-cooked chia seed, coconut milk sugar-free strawberry jam",
     {
       vegan: true,
@@ -374,7 +374,7 @@ const desserts = [
   ),
   new Menu(
     "Mango and Coconut Chia Pudding",
-    ["desserts", "jar"],
+    "desserts",
     "slow-cooked chia seeds, coconut milk and sugar-free mango jam",
     {
       vegan: true,
@@ -390,7 +390,7 @@ const desserts = [
   ),
   new Menu(
     "Carrot Cake",
-    ["desserts", "cake"],
+    "desserts",
     "dairy-free carrot cake with raisins, walnut, cinnamon and velvety cashew cream cheese frosting",
     {
       vegan: true,
@@ -406,7 +406,7 @@ const desserts = [
   ),
   new Menu(
     "Dark Chocolate Mousse Pie",
-    ["desserts", "cake"],
+    "desserts",
     "rich and moist chocolate mousse infused with premium cacao and coconut cream",
     {
       vegan: true,
@@ -425,7 +425,7 @@ const desserts = [
 const beverages = [
   new Menu(
     "Lemonrange",
-    ["beverages", "juice", "cold"],
+    "beverages",
     "lemon, pineapple, orange",
     {
       vegan: true,
@@ -441,7 +441,7 @@ const beverages = [
   ),
   new Menu(
     "Carranger",
-    ["beverages", "juice", "cold"],
+    "beverages",
     "carrot, orange and ginger",
     {
       vegan: true,
@@ -457,7 +457,7 @@ const beverages = [
   ),
   new Menu(
     "Barrot",
-    ["beverages", "juice", "cold"],
+    "beverages",
     "beetroot, green apple, carrot and orange",
     {
       vegan: true,
@@ -473,7 +473,7 @@ const beverages = [
   ),
   new Menu(
     "Tangerine",
-    ["beverages", "juice", "cold"],
+    "beverages",
     "pure tangerine orange juice",
     {
       vegan: true,
@@ -489,7 +489,7 @@ const beverages = [
   ),
   new Menu(
     "Espresso",
-    ["beverages", "coffee", "hot"],
+    "beverages",
     "Excellent espresso shot",
     {
       vegan: true,
@@ -505,7 +505,7 @@ const beverages = [
   ),
   new Menu(
     "Americano",
-    ["beverages", "coffee", "hot"],
+    "beverages",
     "A cup of Americano to begin your day",
     {
       vegan: true,
@@ -521,7 +521,7 @@ const beverages = [
   ),
   new Menu(
     "Cappuccino",
-    ["beverages", "coffee", "hot"],
+    "beverages",
     "A cup of Cappuccino",
     {
       vegan: false,
@@ -537,7 +537,7 @@ const beverages = [
   ),
   new Menu(
     "Iced Americano",
-    ["beverages", "coffee", "ice"],
+    "beverages",
     "A cup of Iced Americano",
     {
       vegan: true,
@@ -553,7 +553,7 @@ const beverages = [
   ),
   new Menu(
     "Iced Coconut Long Black",
-    ["beverages", "coffee", "ice"],
+    "beverages",
     "A cup of Iced Coconut Long Black Coffee",
     {
       vegan: true,
@@ -569,7 +569,7 @@ const beverages = [
   ),
   new Menu(
     "Iced Lemon Tea",
-    ["beverages", "tea", "ice"],
+    "beverages",
     "A cup of Iced Lemon Tea",
     {
       vegan: true,
@@ -585,7 +585,7 @@ const beverages = [
   ),
   new Menu(
     "Latte",
-    ["beverages", "coffee", "hot"],
+    "beverages",
     "A cup of Latte",
     {
       vegan: false,
@@ -601,7 +601,7 @@ const beverages = [
   ),
   new Menu(
     "Thai Breakfast Tea",
-    ["beverages", "tea", "hot"],
+    "beverages",
     "A cup of Thai Tea for your breakfast",
     {
       vegan: true,
