@@ -1,4 +1,4 @@
-import { allMenu } from '../data/foodData.js';
+import { allMenu } from "../data/foodData.js";
 
 export const renderShop = (req, res) => {
   const getShopParams = req.params.shop;
@@ -18,9 +18,9 @@ export const renderCategory = (req, res) => {
   res.render("pages/shop", {
     title: "shop",
     headerTitle: getCategoryParams,
-    pageType: getCategoryParams,
-    favicon: "",
+    pageType: "category",
     dataArray: "",
+    image: "",
     featuredText: "Features text",
   });
 };
@@ -32,8 +32,8 @@ export const renderSlug = (req, res) => {
     title: "shop",
     headerTitle: getSlugParams,
     pageType: "product",
-    favicon: "",
     dataArray: "",
+    image: "",
     featuredText: "Features text",
   });
 };
