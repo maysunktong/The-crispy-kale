@@ -32,7 +32,7 @@ class Menu {
 const salads = [
   new Menu(
     "Cobb",
-    "salad",
+    "salads",
     "iceberg & romaine lettuce, grilled chicken breast, crispy bacon, organic egg, blue cheese, hass avocado, cherry tomato and dijon mustard vinaigrette.",
     {
       vegan: false,
@@ -48,7 +48,7 @@ const salads = [
   ),
   new Menu(
     "Classic Caesar",
-    "salad",
+    "salads",
     "romaine, crispy bacon, quail egg, parmesan cheese, whole wheat croutons and getfresh signature caesar dressing",
     {
       vegan: false,
@@ -64,7 +64,7 @@ const salads = [
   ),
   new Menu(
     "Roast Beef Cobb",
-    "salad",
+    "salads",
     "iceberg & romaine lettuce, australian roast beef, crispy bacon, organic egg, blue cheese, avocado, cherry tomato and dijon mustard vinaigrette",
     {
       vegan: false,
@@ -80,7 +80,7 @@ const salads = [
   ),
   new Menu(
     "Roast Beef Club",
-    "salad",
+    "salads",
     "mixed oak, australian roast beef, paris ham, crispy bacon, organic egg, cheddar cheese, japanese cucumber, cherry tomato and thousand island dressing",
     {
       vegan: false,
@@ -96,7 +96,7 @@ const salads = [
   ),
   new Menu(
     "Smoked Salmon Caesar",
-    "salad",
+    "salads",
     "romaine, smoked atlantic salmon, crispy bacon, quail egg, parmesan cheese, whole wheat croutons and getfresh signature caesar dressing",
     {
       vegan: false,
@@ -112,7 +112,7 @@ const salads = [
   ),
   new Menu(
     "Grilled Chicken Caesar",
-    "salad",
+    "salads",
     "romaine, grilled chicken breast, crispy bacon, quail egg, parmesan cheese, whole wheat croutons and getfresh signature caesar dressing",
     {
       vegan: false,
@@ -128,7 +128,7 @@ const salads = [
   ),
   new Menu(
     "Grilled Salmon Caesar",
-    "salad",
+    "salads",
     "romaine, grilled atlantic salmon steak, crispy bacon, quail egg, parmesan cheese, whole wheat croutons and getfresh signature caesar dressing",
     {
       vegan: false,
@@ -144,7 +144,7 @@ const salads = [
   ),
   new Menu(
     "New Orleans",
-    "salad",
+    "salads",
     "mixed oak, cajun spiced chicken breast, cherry tomato, japanese cucumber, quail egg, edamame, roasted red pepper, sweet corn, feta cheese and sundried tomato vinaigrette",
     {
       vegan: false,
@@ -160,7 +160,7 @@ const salads = [
   ),
   new Menu(
     "Mexican Chopped Chicken",
-    "salad",
+    "salads",
     "mixed lettuce, spiced chicken breast, red beans, hass avocado, jalapeno salsa, roasted red peppers, cheddar cheese, red onion, sweet corn, cherry tomato, smashed tortilla chips, spiced avocado dressing",
     {
       vegan: false,
@@ -176,7 +176,7 @@ const salads = [
   ),
   new Menu(
     "The Vegan Amigo",
-    "salad",
+    "salads",
     "mixed lettuce, mexican spiced tempeh, red bean, avocado, jalapeño salsa, red bell pepper, red onion, sweet corn, cherry tomato, smashed tortilla chips, spiced avocado dressing",
     {
       vegan: true,
@@ -192,7 +192,7 @@ const salads = [
   ),
   new Menu(
     "The Greek",
-    "salad",
+    "salads",
     "iceberg lettuce, japanese cucumber, bell pepper, cherry tomato, red onion, kalamata olive, feta cheese, oregano and lemon-lime vinaigrette",
     {
       vegan: false,
@@ -208,7 +208,7 @@ const salads = [
   ),
   new Menu(
     "Roasted Japanese Pumpkin",
-    "salad",
+    "salads",
     "roasted roasted japanese kabocha pumpkin, wild rocket, cherry tomato, red onion, roasted red pepper, sundried tomato, feta cheese, sunflower seeds, honey balsamic dressing",
     {
       vegan: true,
@@ -227,8 +227,8 @@ const salads = [
 const soups = [
   new Menu(
     "Japanese Pumpkin",
-    "soup",
-    "creamy japanese kabocha pumpkin soup with sunflower seeds",
+    "soups",
+    "creamy japanese kabocha pumpkin soups with sunflower seeds",
     {
       vegan: true,
       vegetarian: false,
@@ -243,7 +243,7 @@ const soups = [
   ),
   new Menu(
     "Minestrone",
-    "soup",
+    "soups",
     "diced italian vegetables in rich tomato broth with orzo pasta and fresh basil",
     {
       vegan: true,
@@ -259,8 +259,8 @@ const soups = [
   ),
   new Menu(
     "Tomato and Basil",
-    "soup",
-    "classic mediterranean tomato soup with italian basil",
+    "soups",
+    "classic mediterranean tomato soups with italian basil",
     {
       vegan: true,
       vegetarian: false,
@@ -275,7 +275,7 @@ const soups = [
   ),
   new Menu(
     "Broccoli and Spinach",
-    "soup",
+    "soups",
     "blended broccoli and baby spinach topped with whole wheat croutons",
     {
       vegan: true,
@@ -291,7 +291,7 @@ const soups = [
   ),
   new Menu(
     "Multi Grain Toast",
-    "soup",
+    "soups",
     "sourdough toast served with butter",
     {
       vegan: false,
@@ -425,7 +425,7 @@ const desserts = [
 const beverages = [
   new Menu(
     "Lemonrange",
-    ["beverage", "juice", "cold"],
+    ["beverages", "juice", "cold"],
     "lemon, pineapple, orange",
     {
       vegan: true,
@@ -441,7 +441,7 @@ const beverages = [
   ),
   new Menu(
     "Carranger",
-    ["beverage", "juice", "cold"],
+    ["beverages", "juice", "cold"],
     "carrot, orange and ginger",
     {
       vegan: true,
@@ -457,7 +457,7 @@ const beverages = [
   ),
   new Menu(
     "Barrot",
-    ["beverage", "juice", "cold"],
+    ["beverages", "juice", "cold"],
     "beetroot, green apple, carrot and orange",
     {
       vegan: true,
@@ -473,7 +473,7 @@ const beverages = [
   ),
   new Menu(
     "Tangerine",
-    ["beverage", "juice", "cold"],
+    ["beverages", "juice", "cold"],
     "pure tangerine orange juice",
     {
       vegan: true,
@@ -489,7 +489,7 @@ const beverages = [
   ),
   new Menu(
     "Espresso",
-    ["beverage", "coffee", "hot"],
+    ["beverages", "coffee", "hot"],
     "Excellent espresso shot",
     {
       vegan: true,
@@ -505,7 +505,7 @@ const beverages = [
   ),
   new Menu(
     "Americano",
-    ["beverage", "coffee", "hot"],
+    ["beverages", "coffee", "hot"],
     "A cup of Americano to begin your day",
     {
       vegan: true,
@@ -521,7 +521,7 @@ const beverages = [
   ),
   new Menu(
     "Cappuccino",
-    ["beverage", "coffee", "hot"],
+    ["beverages", "coffee", "hot"],
     "A cup of Cappuccino",
     {
       vegan: false,
@@ -537,7 +537,7 @@ const beverages = [
   ),
   new Menu(
     "Iced Americano",
-    ["beverage", "coffee", "ice"],
+    ["beverages", "coffee", "ice"],
     "A cup of Iced Americano",
     {
       vegan: true,
@@ -553,7 +553,7 @@ const beverages = [
   ),
   new Menu(
     "Iced Coconut Long Black",
-    ["beverage", "coffee", "ice"],
+    ["beverages", "coffee", "ice"],
     "A cup of Iced Coconut Long Black Coffee",
     {
       vegan: true,
@@ -569,7 +569,7 @@ const beverages = [
   ),
   new Menu(
     "Iced Lemon Tea",
-    ["beverage", "tea", "ice"],
+    ["beverages", "tea", "ice"],
     "A cup of Iced Lemon Tea",
     {
       vegan: true,
@@ -585,7 +585,7 @@ const beverages = [
   ),
   new Menu(
     "Latte",
-    ["beverage", "coffee", "hot"],
+    ["beverages", "coffee", "hot"],
     "A cup of Latte",
     {
       vegan: false,
@@ -601,7 +601,7 @@ const beverages = [
   ),
   new Menu(
     "Thai Breakfast Tea",
-    ["beverage", "tea", "hot"],
+    ["beverages", "tea", "hot"],
     "A cup of Thai Tea for your breakfast",
     {
       vegan: true,
