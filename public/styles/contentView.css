@@ -1,5 +1,6 @@
 .view-container {
   display: flex;
+  align-items: center;
   flex-grow: 1;
   flex-wrap: wrap;
   width: 80%;
@@ -9,6 +10,14 @@
 .item-container {
   flex: 0 25%;
   padding: 12px;
+}
+
+.view-container.product {
+  justify-content: center;
+}
+
+.item-container.product{
+  flex: 0 50%;
 }
 
 .image-frame {
@@ -23,4 +32,20 @@
 
 .image-product {
   width: 90%;
+}
+
+.text-name {
+  font-weight: 500;
+  color: var(--text-color-primary);
+}
+
+.text-category {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-color-secondary);
+}
+
+.text-price {
+  font-weight: 500;
+  color: var(--text-color-secondary);
 }
