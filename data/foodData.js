@@ -15,7 +15,8 @@ class Menu {
     dietary,
     nutrition,
     price,
-    bestseller
+    bestseller,
+    newrelease
   ) {
     this.name = name;
     this.category = category;
@@ -23,9 +24,10 @@ class Menu {
     this.dietary = dietary;
     this.nutrition = nutrition;
     this.price = price;
-    this.bestseller = bestseller;
     this.image = slugify(name);
     this.slug = slugify(name);
+    this.bestseller = bestseller;
+    this.newrelease = newrelease;
   }
 }
 
@@ -44,7 +46,8 @@ const salads = [
     },
     { kCal: 315, fat: 23, protein: 20, carbs: 7 },
     129,
-    false
+    false,
+    true
   ),
   new Menu(
     "Classic Caesar",
@@ -60,7 +63,8 @@ const salads = [
     },
     { kCal: 155, fat: 7, protein: 12, carbs: 11 },
     129,
-    true
+    true,
+    false
   ),
   new Menu(
     "Roast Beef Cobb",
@@ -76,7 +80,8 @@ const salads = [
     },
     { kCal: 320, fat: 24, protein: 18, carbs: 8 },
     159,
-    false
+    true,
+    true
   ),
   new Menu(
     "Roast Beef Club",
@@ -92,6 +97,7 @@ const salads = [
     },
     { kCal: 257, fat: 17, protein: 21, carbs: 5 },
     159,
+    false,
     false
   ),
   new Menu(
@@ -108,7 +114,8 @@ const salads = [
     },
     { kCal: 160, fat: 8, protein: 10, carbs: 12 },
     149,
-    true
+    true,
+    false
   ),
   new Menu(
     "Grilled Chicken Caesar",
@@ -124,7 +131,8 @@ const salads = [
     },
     { kCal: 172, fat: 8, protein: 13, carbs: 12 },
     139,
-    true
+    true,
+    false
   ),
   new Menu(
     "Grilled Salmon Caesar",
@@ -140,6 +148,7 @@ const salads = [
     },
     { kCal: 165, fat: 8, protein: 9, carbs: 12 },
     149,
+    false,
     false
   ),
   new Menu(
@@ -156,6 +165,7 @@ const salads = [
     },
     { kCal: 283, fat: 18, protein: 19, carbs: 10 },
     139,
+    false,
     false
   ),
   new Menu(
@@ -172,6 +182,7 @@ const salads = [
     },
     { kCal: 366, fat: 30, protein: 12, carbs: 12 },
     139,
+    false,
     false
   ),
   new Menu(
@@ -188,6 +199,7 @@ const salads = [
     },
     { kCal: 292, fat: 24, protein: 8, carbs: 11 },
     139,
+    false,
     false
   ),
   new Menu(
@@ -204,6 +216,7 @@ const salads = [
     },
     { kCal: 149, fat: 9, protein: 3, carbs: 14 },
     139,
+    true,
     false
   ),
   new Menu(
@@ -220,7 +233,8 @@ const salads = [
     },
     { kCal: 344, fat: 12, protein: 12, carbs: 47 },
     139,
-    true
+    true,
+    false
   ),
 ];
 
@@ -239,7 +253,8 @@ const soups = [
     },
     { kCal: 128, fat: 4, protein: 5, carbs: 18 },
     79,
-    true
+    true,
+    false
   ),
   new Menu(
     "Minestrone",
@@ -255,7 +270,8 @@ const soups = [
     },
     { kCal: 197, fat: 5, protein: 5, carbs: 33 },
     79,
-    false
+    false,
+    true
   ),
   new Menu(
     "Tomato and Basil",
@@ -271,7 +287,8 @@ const soups = [
     },
     { kCal: 89, fat: 2, protein: 3, carbs: 18 },
     79,
-    true
+    true,
+    false
   ),
   new Menu(
     "Broccoli and Spinach",
@@ -287,6 +304,7 @@ const soups = [
     },
     { kCal: 118, fat: 2, protein: 8, carbs: 16 },
     79,
+    false,
     false
   ),
   new Menu(
@@ -303,6 +321,7 @@ const soups = [
     },
     { kCal: 180, fat: 4, protein: 8, carbs: 24 },
     29,
+    false,
     false
   ),
 ];
@@ -322,6 +341,7 @@ const desserts = [
     },
     { kCal: 336, fat: 8, protein: 8, carbs: 62 },
     119,
+    true,
     true
   ),
   new Menu(
@@ -338,6 +358,7 @@ const desserts = [
     },
     { kCal: 461, fat: 13, protein: 21, carbs: 65 },
     119,
+    false,
     true
   ),
   new Menu(
@@ -354,7 +375,8 @@ const desserts = [
     },
     { kCal: 489, fat: 13, protein: 28, carbs: 63 },
     79,
-    true
+    true,
+    false
   ),
   new Menu(
     "Strawberry and Coconut Chia Pudding",
@@ -370,7 +392,8 @@ const desserts = [
     },
     { kCal: 195, fat: 11, protein: 4, carbs: 20 },
     79,
-    true
+    false,
+    false
   ),
   new Menu(
     "Mango and Coconut Chia Pudding",
@@ -386,7 +409,8 @@ const desserts = [
     },
     { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     79,
-    true
+    true,
+    false
   ),
   new Menu(
     "Carrot Cake",
@@ -402,6 +426,7 @@ const desserts = [
     },
     { kCal: 439, fat: 23, protein: 9, carbs: 49 },
     59,
+    false,
     false
   ),
   new Menu(
@@ -418,6 +443,7 @@ const desserts = [
     },
     { kCal: 380, fat: 24, protein: 6, carbs: 35 },
     69,
+    false,
     false
   ),
 ];
@@ -437,6 +463,7 @@ const beverages = [
     },
     {},
     59,
+    true,
     true
   ),
   new Menu(
@@ -453,7 +480,8 @@ const beverages = [
     },
     {},
     59,
-    true
+    true,
+    false
   ),
   new Menu(
     "Barrot",
@@ -469,7 +497,8 @@ const beverages = [
     },
     {},
     59,
-    true
+    false,
+    false
   ),
   new Menu(
     "Tangerine",
@@ -485,7 +514,8 @@ const beverages = [
     },
     {},
     59,
-    true
+    true,
+    false
   ),
   new Menu(
     "Espresso",
@@ -501,6 +531,7 @@ const beverages = [
     },
     {},
     49,
+    false,
     false
   ),
   new Menu(
@@ -517,6 +548,7 @@ const beverages = [
     },
     {},
     49,
+    true,
     false
   ),
   new Menu(
@@ -533,6 +565,7 @@ const beverages = [
     },
     {},
     49,
+    false,
     false
   ),
   new Menu(
@@ -549,6 +582,7 @@ const beverages = [
     },
     {},
     49,
+    false,
     false
   ),
   new Menu(
@@ -581,6 +615,7 @@ const beverages = [
     },
     {},
     49,
+    true,
     false
   ),
   new Menu(
@@ -597,6 +632,7 @@ const beverages = [
     },
     {},
     49,
+    false,
     false
   ),
   new Menu(
@@ -613,7 +649,8 @@ const beverages = [
     },
     {},
     49,
-    false
+    false,
+    true
   ),
 ];
 
