@@ -1,5 +1,5 @@
 import { allMenu } from "../data/foodData.js";
-import { getImageUrl } from '../utils/functions.js';
+import { getImageUrl } from "../utils/functions.js";
 
 export const renderShop = (req, res) => {
   const getShopParams = req.params.shop;
@@ -15,22 +15,34 @@ export const renderShop = (req, res) => {
 
 export const renderCategory = (req, res) => {
   const getCategoryParams = req.params.category;
-  const getCategory = allMenu.filter(item => item.category.includes(`${getCategoryParams}`))
+  const getCategory = allMenu.filter((item) =>
+    item.category.includes(`${getCategoryParams}`)
+  );
 
+  if (getCategory.length === 0) {
+    return res.status(404).render("pages/404", { title: "Category Not Found" });
+  }
 
   res.render("pages/shop", {
     title: "shop",
     headerTitle: getCategoryParams,
     pageType: "category",
-    dataArray: getCategory,
-    image: "",
-    featuredText: "Features text",
+    dataArray: getCategory.map((item) => ({
+      ...item,
+      image: getImageUrl(item.category, item.slug),
+    })),
+    image: getImageUrl(getCategoryParams, "default"),
+    featuredText: "",
   });
 };
 
 export const renderProduct = (req, res) => {
   const getProductParams = req.params.slug;
-  const getProduct = allMenu.find(item => item.slug === getProductParams);
+  const getProduct = allMenu.find((item) => item.slug === getProductParams);
+
+  if (!getProduct) {
+    return res.status(404).render("pages/404", { title: "Product Not Found" });
+  }
 
   res.render("pages/shop", {
     title: "shop",
@@ -38,6 +50,6 @@ export const renderProduct = (req, res) => {
     pageType: "product",
     dataArray: getProduct,
     image: getImageUrl(getProduct.category, getProduct.slug),
-    featuredText: "Features text",
+    featuredText: getProduct.description,
   });
 };
