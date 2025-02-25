@@ -1,7 +1,23 @@
+:root {
+  --bg-main: #221f20;
+  --bg-item: #f6f2e9;
+  --text-color-primary: #221f20;
+  --text-color-secondary: #a89a8c;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
 }
