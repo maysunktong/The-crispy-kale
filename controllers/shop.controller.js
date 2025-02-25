@@ -8,7 +8,11 @@ export const renderShop = (req, res) => {
     headerTitle: getShopParams,
     pageType: "shop",
     favicon: "",
-    dataArray: "",
+    dataArray: allMenu.map((item) => ({
+      ...item,
+      image: getImageUrl(item.category, item.slug),
+    })),
+    image: getImageUrl(getShopParams, "default"),
     featuredText: "Features text",
   });
 };

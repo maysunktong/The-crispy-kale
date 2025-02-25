@@ -1,4 +1,16 @@
-<% if (locals.pageType === "category") { %>
+<% if (locals.pageType === "shop") { %>
+<div>
+  <% dataArray.forEach(item => { %>
+  <div>
+    <a href="/shop/<%= headerTitle%>/<%= item.slug %>">
+      <img src="<%= item.image %>" alt="<%= item.name %>" width="200" />
+      <%= item.name %>
+      <p><%= item.description %></p>
+    </a>
+  </div>
+  <% }) %>
+</div>
+<% } else if (locals.pageType === "category") { %>
 <div>
   <% dataArray.forEach(item => { %>
   <div>
