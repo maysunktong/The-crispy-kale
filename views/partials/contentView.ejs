@@ -2,7 +2,7 @@
   <div>
     <% dataArray.forEach(item => { %>
       <div>
-        <a href="/shop/product/<%= item.slug %>">
+        <a href="/shop/<%= headerTitle%>/<%= item.slug %>">
           <%= item.name %>
         </a>
       </div>
