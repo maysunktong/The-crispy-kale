@@ -1,9 +1,19 @@
 <% if (locals.pageType === "shop") { %>
+<p class="category-header">All menu</p>
 <div class="view-container">
   <% dataArray.forEach(item => { %>
   <div class="item-container">
     <a href="/shop/<%= item.category %>/<%= item.slug %>">
       <div class="item-frame">
+        <% if (item.bestseller || item.newrelease) { %>
+        <div class="badge-container">
+          <% if (item.newrelease) { %>
+          <span class="badge new">New</span>
+          <% } %> <% if (item.bestseller) { %>
+          <span class="badge bestseller">Bestseller</span>
+          <% } %>
+        </div>
+        <% } %>
         <img
           class="image-product"
           src="<%= item.image %>"
@@ -31,6 +41,15 @@
   <div class="item-container">
     <a href="/shop/<%= item.category%>/<%= item.slug %>">
       <div class="item-frame">
+        <% if (item.bestseller || item.newrelease) { %>
+        <div class="badge-container">
+          <% if (item.newrelease) { %>
+          <span class="badge new">New</span>
+          <% } %> <% if (item.bestseller) { %>
+          <span class="badge bestseller">Bestseller</span>
+          <% } %>
+        </div>
+        <% } %>
         <img
           class="image-product"
           src="<%= item.image %>"
