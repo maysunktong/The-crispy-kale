@@ -1,4 +1,5 @@
 import { allMenu } from "../data/foodData.js";
+import { getImageUrl } from '../utils/functions.js';
 
 export const renderShop = (req, res) => {
   const getShopParams = req.params.shop;
@@ -36,7 +37,7 @@ export const renderProduct = (req, res) => {
     headerTitle: getProductParams,
     pageType: "product",
     dataArray: getProduct,
-    image: "",
+    image: getImageUrl(getProduct.category, getProduct.slug),
     featuredText: "Features text",
   });
 };
