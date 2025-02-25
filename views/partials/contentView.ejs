@@ -3,12 +3,18 @@
   <% dataArray.forEach(item => { %>
   <div class="item-container">
     <a href="/shop/<%= item.category %>/<%= item.slug %>">
-      <div class="image-frame">
+      <div class="item-frame">
         <img
           class="image-product"
           src="<%= item.image %>"
           alt="<%= item.name %>"
           width="200"
+        />
+        <img
+          class="icon plus"
+          src="/images/icons/plus.svg"
+          alt="plus icon"
+          width="32"
         />
       </div>
       <h3 class="text-category"><%= item.category %></h3>
@@ -19,16 +25,23 @@
   <% }) %>
 </div>
 <% } else if (locals.pageType === "category") { %>
+<p class="category-header"><%= headerTitle %></p>
 <div class="view-container">
   <% dataArray.forEach(item => { %>
   <div class="item-container">
-    <a href="/shop/<%= headerTitle%>/<%= item.slug %>">
-      <div class="image-frame">
+    <a href="/shop/<%= item.category%>/<%= item.slug %>">
+      <div class="item-frame">
         <img
           class="image-product"
           src="<%= item.image %>"
           alt="<%= item.name %>"
           width="200"
+        />
+        <img
+          class="icon plus"
+          src="/images/icons/plus.svg"
+          alt="plus icon"
+          width="32"
         />
       </div>
       <h3 class="text-category"><%= item.category %></h3>

@@ -4,7 +4,8 @@
   --bg-main: #104911;
   --bg-item: #f8f5ee;
   --text-color-primary: #151515;
-  --text-color-secondary: rgb(163, 163, 163);
+  --text-color-secondary: rgb(200, 200, 200);
+  --text-color-third: rgb(125, 124, 124);
 }
 
 * {
@@ -33,4 +34,12 @@ a {
 
 li {
   list-style: none;
+}
+
+.category-header {
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  color: var(--bg-main);
+  font-weight: 400;
+  font-size: 2rem;
 }
