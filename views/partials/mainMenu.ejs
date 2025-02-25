@@ -1,6 +1,12 @@
-<% if (locals.pageType === "shop" || locals.pageType === "category" ) { %>
-<nav>
-  <ul>
+<% if (locals.pageType === "shop" || locals.pageType === "category" ||
+locals.pageType === "product") { %>
+<nav class="navbar-container">
+  <ul class="navbar">
+    <li>
+      <a href="/">
+        <img src="/images/logo/logo.svg" alt="logo" width="150" />
+      </a>
+    </li>
     <li>
       <a href="/">Home</a>
     </li>
@@ -19,8 +25,8 @@
   </ul>
 </nav>
 <% } else { %>
-<nav>
-  <ul>
+<nav class="navbar-container">
+  <ul class="navbar">
     <li>
       <a href="/">Home</a>
     </li>
@@ -28,7 +34,9 @@
       <a href="/shop">Shop</a>
     </li>
     <li>
-      <a href="/merchandise">Merchandise</a>
+      <a href="/">
+        <img src="/images/logo/logo.svg" alt="logo" width="150" />
+      </a>
     </li>
     <li>
       <a href="/locations">Locations</a>
