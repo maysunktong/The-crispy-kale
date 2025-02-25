@@ -2,9 +2,9 @@
 
 :root {
   --bg-main: #221f20;
-  --bg-item: #f6f2e9;
-  --text-color-primary: #221f20;
-  --text-color-secondary: rgb(190, 190, 190);
+  --bg-item: #f8f5ee;
+  --text-color-primary: #444444;
+  --text-color-secondary: rgb(219, 217, 217);
 }
 
 * {
@@ -13,34 +13,24 @@
   padding: 0;
 }
 
-body {
+html {
+  width: 100%;
   min-height: 100vh;
+}
+
+body {
   font-family: "Poppins", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 a {
   text-decoration: none;
-  color: var(--text-color-secondary);
+  color: var(--text-color-primary);
 }
 
 li {
   list-style: none;
-}
-
-.navbar-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 150px;
-  background-color: var(--bg-main);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.3rem;
-  font-weight: 400;
-  width: 80%;
 }

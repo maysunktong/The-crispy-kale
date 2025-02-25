@@ -1,0 +1,26 @@
+.view-container {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 12px;
+}
+
+.item-container {
+  flex: 0 25%;
+  padding: 12px;
+}
+
+.image-frame {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-item);
+  border-radius: 12px;
+}
+
+.image-product {
+  width: 90%;
+}

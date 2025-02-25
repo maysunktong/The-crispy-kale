@@ -1,22 +1,28 @@
 <% if (locals.pageType === "shop") { %>
-<div>
+<div class="view-container">
   <% dataArray.forEach(item => { %>
-  <div>
+  <div class="item-container">
     <a href="/shop/<%= item.category %>/<%= item.slug %>">
-      <img src="<%= item.image %>" alt="<%= item.name %>" width="200" />
-      <%= item.name %>
+      <div class="image-frame">
+        <img class="image-product" src="<%= item.image %>" alt="<%= item.name %>" width="200" />
+      </div>
+
+      <h3><%= item.name %></h3>
       <p><%= item.description %></p>
     </a>
   </div>
   <% }) %>
 </div>
 <% } else if (locals.pageType === "category") { %>
-<div>
+<div class="view-container">
   <% dataArray.forEach(item => { %>
-  <div>
+  <div class="item-container">
     <a href="/shop/<%= headerTitle%>/<%= item.slug %>">
-      <img src="<%= item.image %>" alt="<%= item.name %>" width="200" />
-      <%= item.name %>
+      <div class="image-frame">
+        <img class="image-product" src="<%= item.image %>" alt="<%= item.name %>" width="200" />
+      </div>
+
+      <h3><%= item.name %></h3>
       <p><%= item.description %></p>
     </a>
   </div>
