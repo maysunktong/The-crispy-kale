@@ -74,7 +74,7 @@
 
 /* product page */
 .view-container.product {
-  width: 60%;
+  width: 90%;
   justify-content: center;
 }
 
@@ -172,7 +172,7 @@ details {
 
 details p {
   font-weight: 300;
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 summary {
