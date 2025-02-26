@@ -1,4 +1,5 @@
 <% if (locals.pageType === "home") { %>
+<p class="page-header">Hot picks</p>
 <div class="view-container home">
   <% dataArray.filter(item => item.bestseller || item.newrelease).sort(() =>
   Math.random() - 0.5).slice(0, 5).forEach(item => { %>
@@ -35,7 +36,7 @@
   <% }) %>
 </div>
 <% } else if (locals.pageType === "shop") { %>
-<p class="category-header">All menu</p>
+<p class="page-header">All menu</p>
 <div class="view-container">
   <% dataArray.forEach(item => { %>
   <div class="item-container">
@@ -71,7 +72,7 @@
   <% }) %>
 </div>
 <% } else if (locals.pageType === "category") { %>
-<p class="category-header"><%= headerTitle %></p>
+<p class="page-header"><%= headerTitle %></p>
 <div class="view-container">
   <% dataArray.forEach(item => { %>
   <div class="item-container">
