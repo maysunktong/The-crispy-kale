@@ -2,7 +2,6 @@ import { allMenu } from "../data/foodData.js";
 import { getImageUrl } from '../utils/functions.js';
 
 export const renderHome = (req, res) => {
-  const getHomeParams = req.params.home
   res.render("pages/index", {
     title: "The Crispy Kale Takeaway",
     headerTitle: "The Crunchy Kale Restaurant",
