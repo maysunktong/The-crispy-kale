@@ -461,7 +461,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     59,
     true,
     true
@@ -478,7 +478,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     59,
     true,
     false
@@ -495,7 +495,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     59,
     false,
     false
@@ -512,7 +512,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     59,
     true,
     false
@@ -529,7 +529,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     false,
     false
@@ -546,7 +546,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     true,
     false
@@ -563,7 +563,7 @@ const beverages = [
       spicy: false,
       "dairy-free": false,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     false,
     false
@@ -580,7 +580,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     false,
     false
@@ -597,7 +597,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     true
   ),
@@ -613,7 +613,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     true,
     false
@@ -630,7 +630,7 @@ const beverages = [
       spicy: false,
       "dairy-free": false,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     false,
     false
@@ -647,7 +647,7 @@ const beverages = [
       spicy: false,
       "dairy-free": true,
     },
-    {},
+    { kCal: 178, fat: 10, protein: 4, carbs: 19 },
     49,
     false,
     true
