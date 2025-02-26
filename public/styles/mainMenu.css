@@ -20,3 +20,23 @@
 .navbar a {
   color: var(--text-color-secondary);
 }
+
+.navbar-top-mobile {
+  text-align: center;
+  background-color: var(--bg-main);
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 375px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-top-mobile {
+    display: block;
+  }
+}

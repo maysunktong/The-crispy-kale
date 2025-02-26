@@ -123,6 +123,11 @@
   font-size: clamp(12px, 2vw, 1.3em);
 }
 
+/* location page */
+.view-container.location {
+  min-height: 100vh;
+}
+
 /* buttons */
 .back-button {
   font-size: clamp(12px, 2vw, 1.5em);
@@ -146,7 +151,7 @@
   border-radius: 24px;
   padding: 4px 12px;
   background-color: #ffffff;
-  font-size: clamp(12px, 2vw);
+  font-size: clamp(12px, 2vw, 1em);
 }
 
 .badge.new {
@@ -183,6 +188,14 @@ summary {
   .item-container.home {
     flex: 0 33%;
   }
+
+  .badge-container {
+    gap: 2px;
+  }
+
+  .badge {
+    font-size: clamp(8px, 2vw, 1em);
+  }
 }
 
 @media (max-width: 375px) {
@@ -200,7 +213,7 @@ summary {
 
   .item-container.product {
     flex-direction: column;
-    padding: 0;
+    padding: 2rem 0;
   }
 
   .image-frame,

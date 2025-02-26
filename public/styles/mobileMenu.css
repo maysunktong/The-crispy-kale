@@ -1,0 +1,32 @@
+.navbar-mobile {
+  display: none;
+  position: sticky;
+  bottom: 8px;
+  width: 95%;
+  background-color: var(--bg-main);
+  padding: 8px;
+  border-radius: 24px;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.navbar-bottom a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-mobile {
+    display: block;
+  }
+}
