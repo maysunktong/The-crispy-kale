@@ -7,10 +7,13 @@
   padding: 12px;
 }
 
+.view-container.home {
+  width: 90%;
+}
+
 .item-container {
   flex: 0 25%;
   padding: 12px;
-  min-height: 300px;
 }
 
 .item-container.home {
