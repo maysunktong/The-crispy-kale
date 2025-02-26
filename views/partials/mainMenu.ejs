@@ -1,27 +1,29 @@
 <% if (locals.pageType === "shop" || locals.pageType === "category" ||
 locals.pageType === "product") { %>
 <nav class="navbar-container">
-  <ul class="navbar">
+  <ul class="navbar shop">
     <li>
       <a href="/">
-        <img src="/images/logo/logo.svg" alt="logo" width="150" />
+        <img src="/images/logo/logo.svg" alt="logo" width="100" />
       </a>
     </li>
-    <li>
-      <a href="/shop/">Our Products</a>
-    </li>
-    <li>
-      <a href="/shop/salads">Salad Bowls</a>
-    </li>
-    <li>
-      <a href="/shop/soups">Soups</a>
-    </li>
-    <li>
-      <a href="/shop/desserts">Desserts</a>
-    </li>
-    <li>
-      <a href="/shop/beverages">Beverages</a>
-    </li>
+    <div class="navbar-items">
+      <li>
+        <a href="/shop/">Our Products</a>
+      </li>
+      <li>
+        <a href="/shop/salads">Salad Bowls</a>
+      </li>
+      <li>
+        <a href="/shop/soups">Soups</a>
+      </li>
+      <li>
+        <a href="/shop/desserts">Desserts</a>
+      </li>
+      <li>
+        <a href="/shop/beverages">Beverages</a>
+      </li>
+    </div>
   </ul>
 </nav>
 <nav class="navbar-top-mobile">
@@ -40,7 +42,7 @@ locals.pageType === "product") { %>
     </li>
     <li>
       <a href="/">
-        <img src="/images/logo/logo.svg" alt="logo" width="150" />
+        <img src="/images/logo/logo.svg" alt="logo" width="100" />
       </a>
     </li>
     <li>

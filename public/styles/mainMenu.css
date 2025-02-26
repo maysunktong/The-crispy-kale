@@ -1,20 +1,23 @@
 .navbar-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  max-height: 150px;
   width: 100%;
   background-color: var(--bg-main);
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: clamp(12px, 2vw, 1em);
   font-weight: 500;
   width: 90%;
+}
+
+.navbar img {
+  max-width: 150px;
 }
 
 .navbar a {
@@ -28,7 +31,19 @@
   width: 100%;
 }
 
+.navbar-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 50px;
+}
+
 @media (max-width: 768px) {
+  .navbar.shop {
+    display: block;
+    text-align: center;
+  }
 }
 
 @media (max-width: 375px) {
