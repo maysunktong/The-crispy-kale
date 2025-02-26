@@ -128,6 +128,26 @@
       <h1 class="text-name-product"><%= dataArray.name %></h1>
       <p class="text-description"><%= dataArray.description %></p>
       <p class="text-description">Price: <%= dataArray.price %> kr</p>
+
+      <% if (dataArray.dietary.vegan || dataArray.dietary.vegetarian ||
+      dataArray.dietary.keto || dataArray.dietary["high-protein"] ||
+      dataArray.dietary.spicy || dataArray.dietary["dairy-free"] ) { %>
+      <div class="label-container">
+        <% if (dataArray.dietary.vegan) { %>
+        <span class="label">Vegan</span>
+        <% } %> <% if (dataArray.dietary.vegetarian) { %>
+        <span class="label">Vegetarian</span>
+        <% } %> <% if (dataArray.dietary.keto) { %>
+        <span class="label">Keto</span>
+        <% } %> <% if (dataArray.dietary["high-protein"]) { %>
+        <span class="label">High protein</span>
+        <% } %> <% if (dataArray.dietary.spicy) { %>
+        <span class="label">Spicy</span>
+        <% } %> <% if (dataArray.dietary["dairy-free"] ) { %>
+        <span class="label">Dairy-free</span>
+        <% } %>
+      </div>
+      <% } %>
       <div class="accordion-container">
         <details>
           <summary>Nutrition</summary>
