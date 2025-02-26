@@ -1,4 +1,39 @@
-<% if (locals.pageType === "shop") { %>
+<% if (locals.pageType === "home") { %>
+<div class="view-container home">
+  <% dataArray.filter(item => item.bestseller || item.newrelease).forEach(item => { %>
+  <div class="item-container home">
+    <a href="/shop/<%= item.category %>/<%= item.slug %>">
+      <div class="item-frame">
+        <% if (item.bestseller || item.newrelease) { %>
+        <div class="badge-container">
+          <% if (item.newrelease) { %>
+          <span class="badge new">New</span>
+          <% } %> <% if (item.bestseller) { %>
+          <span class="badge bestseller">Bestseller</span>
+          <% } %>
+        </div>
+        <% } %>
+        <img
+          class="image-product"
+          src="<%= item.image %>"
+          alt="<%= item.name %>"
+          width="200"
+        />
+        <img
+          class="icon plus"
+          src="/images/icons/plus.svg"
+          alt="plus icon"
+          width="32"
+        />
+      </div>
+      <h3 class="text-category"><%= item.category %></h3>
+      <h3 class="text-name"><%= item.name %></h3>
+      <h3 class="text-price"><%= item.price %> kr</h3>
+    </a>
+  </div>
+  <% }) %>
+</div>
+<% } else if (locals.pageType === "shop") { %>
 <p class="category-header">All menu</p>
 <div class="view-container">
   <% dataArray.forEach(item => { %>

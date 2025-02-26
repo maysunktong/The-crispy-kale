@@ -13,6 +13,10 @@
   min-height: 300px;
 }
 
+.item-container.home {
+  flex: 0 20%;
+}
+
 .view-container.product {
   justify-content: center;
 }
