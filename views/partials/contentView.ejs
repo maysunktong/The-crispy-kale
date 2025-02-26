@@ -1,6 +1,7 @@
 <% if (locals.pageType === "home") { %>
 <div class="view-container home">
-  <% dataArray.filter(item => item.bestseller || item.newrelease).forEach(item => { %>
+  <% dataArray.filter(item => item.bestseller || item.newrelease).sort(() =>
+  Math.random() - 0.5).slice(0, 5).forEach(item => { %>
   <div class="item-container home">
     <a href="/shop/<%= item.category %>/<%= item.slug %>">
       <div class="item-frame">
