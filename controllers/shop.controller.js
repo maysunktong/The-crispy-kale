@@ -12,7 +12,6 @@ export const renderShop = (req, res) => {
       ...item,
       image: getImageUrl(item.category, item.slug),
     })),
-    image: getImageUrl(getShopParams, "default"),
     featuredText: "Features text",
   });
 };
@@ -35,7 +34,6 @@ export const renderCategory = (req, res) => {
       ...item,
       image: getImageUrl(item.category, item.slug),
     })),
-    image: getImageUrl(getCategoryParams, "default"),
     featuredText: "",
   });
 };
@@ -53,7 +51,6 @@ export const renderProduct = (req, res) => {
     headerTitle: getProductParams,
     pageType: "product",
     dataArray: getProduct,
-    image: getImageUrl(getProduct.category, getProduct.slug),
     featuredText: getProduct.description,
   });
 };
