@@ -1,6 +1,6 @@
 export const renderLocation = (req, res) => {
   res.render("pages/locations", {
-    title: "Home",
+    title: "location",
     headerTitle: "Locations",
     pageType: "location",
     favicon: "",

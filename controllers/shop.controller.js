@@ -5,7 +5,7 @@ export const renderShop = (req, res) => {
   const getShopParams = req.params.shop;
   res.render("pages/shop", {
     title: "shop",
-    headerTitle: getShopParams,
+    headerTitle: "shop",
     pageType: "shop",
     favicon: "",
     dataArray: allMenu.map((item) => ({
@@ -27,7 +27,7 @@ export const renderCategory = (req, res) => {
   }
 
   res.render("pages/shop", {
-    title: "shop",
+    title: getCategoryParams,
     headerTitle: getCategoryParams,
     pageType: "category",
     dataArray: getCategory.map((item) => ({
@@ -47,7 +47,7 @@ export const renderProduct = (req, res) => {
   }
 
   res.render("pages/shop", {
-    title: "shop",
+    title: getProductParams,
     headerTitle: getProductParams,
     pageType: "product",
     dataArray: {

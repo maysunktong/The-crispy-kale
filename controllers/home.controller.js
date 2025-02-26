@@ -4,7 +4,7 @@ import { getImageUrl } from '../utils/functions.js';
 export const renderHome = (req, res) => {
   const getHomeParams = req.params.home
   res.render("pages/index", {
-    title: "Home",
+    title: "The Crispy Kale Takeaway",
     headerTitle: "The Crunchy Kale Restaurant",
     pageType: "home",
     favicon: "",
