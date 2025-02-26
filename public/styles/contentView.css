@@ -67,6 +67,46 @@
   background-color: rgb(207, 207, 204);
 }
 
+/* Hero section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  min-height: 100vh;
+  border: 1px solid var(--text-color-third);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero a {
+  width: fit-content;
+  padding: 1rem;
+  border: double 3px var(--text-color-third);
+  color: var(--text-color-primary);
+  background-color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+.hero a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hero.left {
+  background-image: url("../images/hero/cafe.jpg");
+}
+
+.hero.right {
+  background-image: url("../images/hero/food.jpg");
+}
+
 /* product page */
 .view-container.product {
   justify-content: center;
@@ -228,5 +268,9 @@ summary {
   .item-image-product.product {
     width: 100%;
     align-items: center;
+  }
+
+  .hero.left {
+    display: none;
   }
 }

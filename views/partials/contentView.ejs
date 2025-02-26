@@ -1,4 +1,10 @@
 <% if (locals.pageType === "home") { %>
+<div class="hero-section">
+  <div class="hero left">
+    <a href="/locations">Our restaurants</a>
+  </div>
+  <div class="hero right"><a href="/shop">Shop now</a></div>
+</div>
 <p class="page-header">Hot picks</p>
 <div class="view-container home">
   <% dataArray.filter(item => item.bestseller || item.newrelease).sort(() =>
