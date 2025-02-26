@@ -16,7 +16,7 @@
         </div>
         <% } %>
         <img
-          class="image-product"
+          class="item-image-product"
           src="<%= item.image %>"
           alt="<%= item.name %>"
           width="200"
@@ -52,7 +52,7 @@
         </div>
         <% } %>
         <img
-          class="image-product"
+          class="item-image-product"
           src="<%= item.image %>"
           alt="<%= item.name %>"
           width="200"
@@ -73,9 +73,9 @@
 </div>
 <% } else if (locals.pageType === "category") { %>
 <p class="page-header"><%= headerTitle %></p>
-<div class="view-container">
+<div class="view-container category">
   <% dataArray.forEach(item => { %>
-  <div class="item-container">
+  <div class="item-container category">
     <a href="/shop/<%= item.category%>/<%= item.slug %>">
       <div class="item-frame">
         <% if (item.bestseller || item.newrelease) { %>
@@ -88,13 +88,13 @@
         </div>
         <% } %>
         <img
-          class="image-product"
+          class="item-image-product"
           src="<%= item.image %>"
           alt="<%= item.name %>"
           width="200"
         />
         <img
-          class="icon plus"
+          class="icon plus add-to-cart-button"
           src="/images/icons/plus.svg"
           alt="plus icon"
           width="32"
@@ -110,16 +110,51 @@
 <% } else if (locals.pageType === "product") { %>
 <div class="view-container product">
   <div class="item-container product">
+    <a href="/shop/<%= dataArray.category%>" class="back-button">
+      <img src="/images/icons/back.png" alt="" width="12" />&nbsp;&nbsp;Back</a
+    >
     <div class="image-frame">
       <img
-        class="image-product"
-        src="<%= image %>"
+        class="item-image-product product"
+        src="<%= dataArray.image %>"
         alt="<%= dataArray.name %>"
         width="200"
       />
     </div>
-    <h2><%= dataArray.name %></h2>
-    <p><%= dataArray.description %></p>
+    <div class="item-detail">
+      <a href="/shop/<%= dataArray.category%>" class="text-category"
+        ><%= dataArray.category %></a
+      >
+      <h1 class="text-name-product"><%= dataArray.name %></h1>
+      <p class="text-description"><%= dataArray.description %></p>
+      <p class="text-description">Price: <%= dataArray.price %> kr</p>
+      <div class="accordion-container">
+        <details>
+          <summary>Nutrition</summary>
+          <p>kCal: <%= dataArray.nutrition.kCal %></p>
+          <p>Fat: <%= dataArray.nutrition.fat %></p>
+          <p>Protein: <%= dataArray.nutrition.protein %></p>
+          <p>Carbs: <%= dataArray.nutrition.carbs %></p>
+        </details>
+        <details>
+          <summary>Do you offer free shipping?</summary>
+          <p>Yes, we offer free shipping on orders over 299 kr.</p>
+        </details>
+        <details>
+          <summary>How can I contact support?</summary>
+          <p>
+            You can reach us via email at
+            <a href="mailto:support@thecrispykale.com"
+              >support@thecrispykale.com</a
+            >
+          </p>
+        </details>
+      </div>
+    </div>
   </div>
+</div>
+<% } else if (locals.pageType === "location") { %>
+<div>
+  <h1>hi</h1>
 </div>
 <% } %>

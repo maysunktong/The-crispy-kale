@@ -50,7 +50,10 @@ export const renderProduct = (req, res) => {
     title: "shop",
     headerTitle: getProductParams,
     pageType: "product",
-    dataArray: getProduct,
+    dataArray: {
+      ...getProduct,
+      image: getImageUrl(getProduct.category, getProduct.slug),
+    },
     featuredText: getProduct.description,
   });
 };
