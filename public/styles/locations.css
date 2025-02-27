@@ -1,11 +1,14 @@
 .locations-container {
   width: 80%;
+  height: 100%;
+  margin: 1rem;
 }
 
 .location {
   display: flex;
   flex: 0 50%;
   flex-grow: 1;
+  padding: 1rem;
 }
 
 .location-details {
@@ -52,11 +55,14 @@
 }
 
 @media (max-width: 768px) {
-  
-}
-
-@media (max-width: 480px) {
+  .locations-container {
+    width: 90%;
+  }
   .map-container {
     display: none;
   }
+}
+
+@media (max-width: 480px) {
+  
 }
