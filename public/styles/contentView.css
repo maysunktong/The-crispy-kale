@@ -73,6 +73,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex: 0 50%;
 }
 .hero {
   background-size: cover;
@@ -101,10 +102,12 @@
 
 .hero.left {
   background-image: url("../images/hero/cafe.jpg");
+  flex: 1;
 }
 
 .hero.right {
   background-image: url("../images/hero/food.jpg");
+  flex: 1;
 }
 
 /* product page */
@@ -236,9 +239,13 @@ summary {
   .badge {
     font-size: clamp(8px, 2vw, 1em);
   }
+
+  .hero.left {
+    display: none;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .view-container.product {
     width: 80%;
   }
