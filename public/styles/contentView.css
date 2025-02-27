@@ -94,6 +94,7 @@
   color: var(--text-color-primary);
   background-color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
+  font-size: clamp(12px, 2vw, 1.2em);
 }
 
 .hero a:hover {
@@ -164,11 +165,6 @@
   padding: 4px 12px;
   background-color: #ade8f4;
   font-size: clamp(12px, 2vw, 1.3em);
-}
-
-/* location page */
-.view-container.location {
-  min-height: 100vh;
 }
 
 /* buttons */

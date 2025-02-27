@@ -24,6 +24,10 @@
   color: var(--text-color-secondary);
 }
 
+.navbar a:hover {
+  color: var(--bg-badge);
+}
+
 .navbar-top-mobile {
   text-align: center;
   background-color: var(--bg-main);
