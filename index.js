@@ -3,6 +3,7 @@ import express from "express";
 import morgan from "morgan";
 import * as path from "path";
 
+import notFoundRouter from "./routes/404.routes.js";
 import cartRouter from "./routes/cart.routes.js";
 import homeRouter from "./routes/home.routes.js";
 import locationRouter from "./routes/location.routes.js";
@@ -26,6 +27,8 @@ app.use("/shop", shopRouter);
 app.use("/merchandise", merchandiseRouter);
 app.use("/locations", locationRouter);
 app.use("/cart", cartRouter);
+
+app.use(notFoundRouter);
 
 app.listen(PORT, () =>
   console.log(`🥗 listening on port ${PORT} ✅ http://localhost:${PORT}`)
