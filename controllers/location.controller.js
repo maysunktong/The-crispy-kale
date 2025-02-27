@@ -1,8 +1,8 @@
 export const renderLocation = (req, res) => {
   res.render("pages/locations", {
-    title: "location",
+    title: "locations",
     headerTitle: "Locations",
-    pageType: "location",
+    pageType: "locations",
     favicon: "",
     dataArray: "",
     featuredText: "Features text",

@@ -2,7 +2,6 @@ import { allMenu } from "../data/foodData.js";
 import { getImageUrl } from "../utils/functions.js";
 
 export const renderShop = (req, res) => {
-  const getShopParams = req.params.shop;
   res.render("pages/shop", {
     title: "shop",
     headerTitle: "shop",

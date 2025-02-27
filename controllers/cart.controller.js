@@ -1,8 +1,8 @@
 export const renderCart = (req, res) => {
   res.render("pages/cart", {
-    title: "Home",
+    title: "cart",
     headerTitle: "Cart",
-    pageType: "home",
+    pageType: "cart",
     favicon: "",
     dataArray: "",
     featuredText: "Features text",

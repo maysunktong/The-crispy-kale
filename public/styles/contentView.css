@@ -276,4 +276,8 @@ summary {
   .hero.left {
     display: none;
   }
+
+  .badge-container {
+    display: none;
+  }
 }
