@@ -5,6 +5,9 @@
   max-height: 150px;
   width: 100%;
   background-color: var(--bg-main);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar {
