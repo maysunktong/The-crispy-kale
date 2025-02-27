@@ -32,16 +32,17 @@
 
 .navbar-mobile-bottom a {
   color: white;
+  font-size: clamp(12px, 2vw, 1.5em);
 }
 
 .navbar-mobile-top a {
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 0.5em);
   color: var(--bg-main);
 }
 
 @media (max-width: 768px) {
-  .navbar-mobile {
-    display: none;
+  .navbar-mobile.bottom-container {
+    display: block;
   }
 }
 
