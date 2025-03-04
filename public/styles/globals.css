@@ -47,6 +47,13 @@ li {
   font-size: 2rem;
 }
 
+.page-subheader {
+  color: var(--text-color-third);
+  padding-top: 1rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
 @media (max-width: 768px) {
   body {
     background-color: rgb(213, 222, 213);
