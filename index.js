@@ -4,7 +4,7 @@ import morgan from "morgan";
 import * as path from "path";
 
 import notFoundRouter from "./routes/404.routes.js";
-import cartRouter from "./routes/cart.routes.js";
+import blogRouter from "./routes/blog.routes.js";
 import homeRouter from "./routes/home.routes.js";
 import locationRouter from "./routes/location.routes.js";
 import merchandiseRouter from "./routes/merchandise.routes.js";
@@ -26,7 +26,7 @@ app.get("/", homeRouter);
 app.use("/shop", shopRouter);
 app.use("/merchandise", merchandiseRouter);
 app.use("/locations", locationRouter);
-app.use("/cart", cartRouter);
+app.use("/blog", blogRouter);
 
 app.use(notFoundRouter);
 
