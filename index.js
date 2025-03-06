@@ -7,7 +7,6 @@ import notFoundRouter from "./routes/404.routes.js";
 import blogRouter from "./routes/blog.routes.js";
 import homeRouter from "./routes/home.routes.js";
 import locationRouter from "./routes/location.routes.js";
-import merchandiseRouter from "./routes/merchandise.routes.js";
 import shopRouter from "./routes/shop.routes.js";
 
 dotenv.config();
@@ -24,7 +23,6 @@ const PORT = process.env.PORT;
 
 app.get("/", homeRouter);
 app.use("/shop", shopRouter);
-app.use("/merchandise", merchandiseRouter);
 app.use("/locations", locationRouter);
 app.use("/blog", blogRouter);
 
