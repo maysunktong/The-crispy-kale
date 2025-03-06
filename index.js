@@ -32,5 +32,4 @@ app.listen(PORT, () =>
   console.log(`🥗 listening on port ${PORT} ✅ http://localhost:${PORT}`)
 );
 
-// TODO:
-// .env file
+
